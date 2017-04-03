@@ -1,0 +1,102 @@
+body{
+	background: #505050;
+}
+
+.wrapper{
+	margin:0 auto;
+	width: 80%;
+}
+
+.clear{
+	clear: both;
+}
+
+.case_border{
+	background: #909090;
+	border-radius: 10px;
+	-moz-box-shadow: 10px 10px 8px 0px #000000;
+	-webkit-box-shadow: 10px 10px 8px 0px #000000;
+	-o-box-shadow: 10px 10px 8px 0px #000000;
+	box-shadow: 10px 10px 8px 0px #000000;
+}
+
+header{
+	position: relative;
+	padding: 10px;
+	height: 118px;	
+}
+
+.header_right{
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	top: 0px;
+	right: 25px;
+	padding: 10px;
+}
+
+.ico_right{
+	position: relative;
+	display: block;
+	float: right;
+	width: 25px;
+	height: 100%;
+}
+
+.ico_right img:last-child{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.content{
+	position: relative;
+	display: table;
+	padding: 20px 30px 0px 30px;
+}
+
+.content_left{
+	position: relative;
+	margin-right: 20px;
+	padding-top: 20px;
+	width: 140px;
+}
+
+.content_left img{
+	display: block;
+	width: 68px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.content_left img:nth-child(3){
+	border: 5px red solid;
+	border-radius: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+.content_left img:last-child{
+	padding-bottom: 30px;
+}
+
+.content_center{
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	background-origin: padding-box;
+	background: url("./resources/cluster.jpg") 0 0 no-repeat;
+}
+
+.content_right{
+	position: relative;
+	padding-top: 20px;
+	width: 140px;
+}
+
+.content_right img{
+	width: 100%;
+}
+
