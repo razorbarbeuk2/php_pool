@@ -3,6 +3,7 @@ body{
 }
 
 .wrapper{
+	position: relative;
 	margin:0 auto;
 	width: 80%;
 }
@@ -37,13 +38,12 @@ header{
 
 .ico_right{
 	position: relative;
-	display: block;
 	float: right;
 	width: 25px;
 	height: 100%;
 }
 
-.ico_right img:last-child{
+.ico_right a:last-child{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -51,25 +51,35 @@ header{
 
 .content{
 	position: relative;
-	display: table;
+	display: flex;
 	padding: 20px 30px 0px 30px;
 }
 
-.content_left{
+.box_cell{
 	position: relative;
-	margin-right: 20px;
-	padding-top: 20px;
-	width: 140px;
+	padding: 20px 10px 20px 10px;
+	width: 20%;
+	height: 425px;
+
 }
 
-.content_left img{
+.box_cell_left{
+	margin-right: 20px;
+}
+
+.box_cell_right{
+	margin-left: 20px;
+}
+
+
+.box_cell img{
 	display: block;
 	width: 68px;
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
 
-.content_left img:nth-child(3){
+.box_cell_left img:nth-child(3){
 	border: 5px red solid;
 	border-radius: 5px;
 	padding-bottom: 0px;
@@ -81,22 +91,63 @@ header{
 }
 
 .content_center{
-	position: relative;
-	display: table-cell;
-	text-align: center;
 	width: 100%;
-	padding: 10px;
-	background-origin: padding-box;
+	height: 581px;
+	border-radius: 10px;
 	background: url("./resources/cluster.jpg") 0 0 no-repeat;
+	background-size: cover;
+	border: solid 10px #909090;
 }
 
-.content_right{
-	position: relative;
-	padding-top: 20px;
-	width: 140px;
+.content_center a{
+	position: absolute;
+	display: block;
+	width: 10%;
+	height: 30%;
+	background: transparent;
+	bottom: 10%;
+	right: 45%;
 }
 
-.content_right img{
+.content_center a:last-child{
+	position: absolute;
+	display: block;
+	width: 10%;
+	height: 20%;
+	background: transparent;
+	bottom: 30%;
+	right: 35%;
+}
+
+.wall{
+	display: block;
 	width: 100%;
+	height: 71px;
+	background: url("./resources/brick.jpg");
+}
+
+.content_input{
+	position: absolute;
+	padding: 20px 10px 20px 10px;
+	width: 30%;
+	top: 90%;
+	left: -20px;
+	background: #88ff89;
+}
+
+.content_input p{
+	margin: 0;
+}
+
+.content_input form input:first-child{
+	width: 70%;
+}
+
+.enter_text{
+	font-size: 30px;
+}
+
+.red_shade{
+	text-shadow: 8px 8px 4px rgba(255, 0, 0, 1);
 }
 
