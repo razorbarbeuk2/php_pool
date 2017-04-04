@@ -1,11 +1,12 @@
 #!/usr/bin/php
 <?php
-	$render = "";
+	$tab = array();
 	$render_tab = array();
 	if ($argc > 1)
 	{
-		$render = trim($argv[1]);
-		foreach ($render as $key => $value)
+		trim($argv[1]);
+		$tab = explode(' ', $argv[1]);
+		foreach ($tab as $key => $value)
 		{
 			if (!(empty($value)))
 			{
@@ -13,6 +14,7 @@
 			}
 		}
 		$render = implode(' ', $render_tab);
+		echo $render;
 	}
-	echo $render;
+	
 ?>
