@@ -1,0 +1,80 @@
+body{
+	display: block;
+	background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/43507a50348625.58ceb1925e067.jpg") 0 0 no-repeat;
+	background-size: cover;
+	font-family: sans-serif;
+}
+table{
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+h2, p{
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #3E4E50;
+}
+tr{
+	width: 5%;
+	display: inline-block;
+	vertical-align: top;
+}
+tr.col_decal{
+	vertical-align: top;
+}
+.case{
+	position: relative;
+	display: block;
+	height: 75px;
+	padding: 5px;
+	background: #F8BD7F;
+	text-align: center;
+	border: solid 2px #F5AC72;
+}
+.case p:first-child{
+	font-size: 50%;
+	text-align: right;
+}
+.case p:last-child{
+	text-align: left;
+	font-size: 50%;
+}
+.case h2{
+	line-height: 52px;
+	font-size: 150%;
+	vertical-align: middle;
+}
+.case_num{
+	line-height: 75px;
+	vertical-align: middle;
+}
+.case_num p{
+	text-align: center !important;
+}
+.blank{
+	border: none;
+	background: transparent;
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 640px) {
+	.case{
+		height: 55px;
+		padding: 5px;
+	}
+	.case h2{
+		line-height: 52px;
+		font-size: 100%;
+		vertical-align: middle;
+	}
+
+	.case p:first-child{
+		font-size: 20%;
+		text-align: right;
+	}
+	.case p:last-child{
+		text-align: left;
+		font-size: 20%;
+	}	
+	
+}

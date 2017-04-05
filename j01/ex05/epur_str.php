@@ -16,5 +16,4 @@
 		$render = implode(' ', $render_tab);
 		echo $render;
 	}
-	
 ?>

@@ -77,6 +77,7 @@ header{
 	width: 68px;
 	margin: 0 auto;
 	padding-bottom: 10px;
+	cursor: pointer;
 }
 
 .box_cell_left img:nth-child(3){
@@ -91,7 +92,7 @@ header{
 }
 
 .content_center{
-	width: 100%;
+	width: 1000px;
 	height: 581px;
 	border-radius: 10px;
 	background: url("./resources/cluster.jpg") 0 0 no-repeat;
@@ -136,6 +137,7 @@ header{
 }
 
 .content_input p{
+	font-family: verdana, sans-serif;
 	margin: 0;
 }
 
@@ -144,6 +146,7 @@ header{
 }
 
 .enter_text{
+	font-family: georgia, sans-serif;
 	font-size: 30px;
 }
 

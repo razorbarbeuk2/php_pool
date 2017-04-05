@@ -1,0 +1,75 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	position: relative;
+	width: 800px;
+	height: 600px;
+	background: #22252a;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Roboto', verdana, sans-serif;
+	font-weight: 200;
+	color: #FFF;
+}
+
+ul{
+	width: 600px;
+	list-style: none;
+	background: red;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul li.link{
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+ul li.link:last-child{
+	margin-right: 0px;
+}
+
+ul li.link ul{
+	position: absolute;
+	width: inherit;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin-left: 0;
+	overflow: hidden;
+	width: 100%;
+	max-height:0;
+	z-index: 1000;
+}
+
+ul li.link:hover ul{
+	max-height:15em; 
+}
+
+.link ul li:first-child{
+	padding-top: 20px;
+}
+
+.link ul li{
+	display: block;
+	background: blue;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.link ul li:hover{
+	background: pink;
+}
+
+.link ul li>a{
+	
+	text-align: center;
+}
