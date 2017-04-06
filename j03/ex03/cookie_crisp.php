@@ -1,0 +1,11 @@
+<?php
+if (isset($_GET)) 
+{
+	if ($_GET['action'] === 'set' && $_GET['name'] && $_GET['value'])
+		setcookie($_GET['name'], $_GET['value'], time()+2*3600);
+	if ($_GET['action'] === 'get' && $_GET['name'] && $_GET['value'])
+		echo $_COOKIE[$_GET['name']];
+	if ($_GET['action'] === 'del' && $_GET['name'] && $_GET['value'])
+		setcookie($_GET['name'], "", time()-2*3600);
+}
+?>

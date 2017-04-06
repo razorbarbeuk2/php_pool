@@ -4,7 +4,6 @@ if ($argc > 1)
 {
 	foreach ($argv as $key => $value)
 	{
-
 		if ($key > 0 && $value)
 			check_date($value);
 	}
